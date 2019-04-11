@@ -1,0 +1,549 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset='utf-8'>
+		<meta name='description' content='free old cartoons website'>
+		<meta name='keywords' content='cartoons,old cartoons'>
+		<meta name='author' content='Johan Liebert'>
+		<meta name='viewport' content='width=device-width, initial-scale=1.0'>
+		<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+        <link href='nara-tv.css' rel='stylesheet'>
+        <link href='nara-tv-600down.css' media='screen and (max-width: 600px)' rel='stylesheet'>
+        <link href='nara-tv-600up.css' media='screen and (min-width: 600px)' rel='stylesheet'>
+        <link href='nara-tv-768up.css' media='screen and (min-width: 768px)' rel='stylesheet'>
+        <link href='nara-tv-992up.css' media='screen and (min-width: 992px)' rel='stylesheet'>
+        <link href='nara-tv-1200up.css' media='screen and (min-width: 1200px)' rel='stylesheet'>
+		<script src='nara-tv.js'></script>
+	</head>
+	<body>
+		<div style='width: 100%'>
+		  <div id="myCarousel" class="carousel slide" data-ride="carousel">
+			<!-- Indicators -->
+			<ol class="carousel-indicators">
+			  <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+			  <li data-target="#myCarousel" data-slide-to="1"></li>
+			  <li data-target="#myCarousel" data-slide-to="2"></li>
+			</ol>
+
+			<!-- Wrapper for slides -->
+			<div class="carousel-inner">
+			  <div class="item active">
+				<img src="naruto-shippuden.jpg" alt="naruto-shippuden" style="width:100%;">
+			  </div>
+
+			  <div class="item">
+				<img src="dragon-ball-z.jpg" alt="dragon-ball-z" style="width:100%;">
+			  </div>
+			
+			  <div class="item">
+				<img src="boku-dake-ga-inai-machi.jpg" alt="boku-dake-ga-inai-machi" style="width:100%;">
+			  </div>
+			</div>
+
+			<!-- Left and right controls -->
+			<a class="left carousel-control" href="#myCarousel" data-slide="prev">
+			  <span class="glyphicon glyphicon-chevron-left"></span>
+			  <span class="sr-only">Previous</span>
+			</a>
+			<a class="right carousel-control" href="#myCarousel" data-slide="next">
+			  <span class="glyphicon glyphicon-chevron-right"></span>
+			  <span class="sr-only">Next</span>
+			</a>
+		  </div>
+		</div>
+
+        <header id='menu-mobile'>
+            <div id='menu-container'>
+            <div id='openSideNav-container' onclick='openSideNav()'>
+                <i class='material-icons openSideNav'>format_align_justify</i>
+            </div>
+
+            <div id='brightness-mobile-container' onclick='changeTheme()'>
+                <i id='brightness-mobile' class="material-icons brightness">brightness_2</i>
+            </div>
+        </div>
+
+        <div id='search-container'>
+            <form>
+                <input dir='rtl' class='menuLeft' id='searchInput-mobile' type='text' onkeyup='searchMobile()' value="إبحث عن أنمي أو فلم . . ." onfocus="if(this.value=='إبحث عن أنمي أو فلم . . .') this.value='';" onblur="if(this.value=='') this.value='إبحث عن أنمي أو فلم . . .';">
+                <i onclick='clearSearch(); searchMobile()' id='clear-mobile' class="material-icons">clear</i>
+            </form>
+        </div>
+
+        <div id='sideNav' class='sideNav' dir='rtl'>
+            <i class="material-icons closeSideNav" onclick='closeSideNav()'>close</i>
+            <a style='margin-top: 10vw'>الرئيسية</a>
+            <a>قائمة الأنمي</a>
+            <a>قائمة أفلام الأنمي</a>
+        </div>
+        </header>
+
+        <ul id="searchUL-mobile">
+					<li><a dir='rtl' href='#'>ناروتو شيبودن</a></li>
+					<li><a dir='rtl' href='#'>القناص</a></li>
+					<li><a dir='rtl' href='#'>كرات التنين</a></li>
+					<li><a dir='rtl' href='#'>ون بيس</a></li>
+					<li><a dir='rtl' href='#'>المحقق كونان</a></li>
+					<li><a dir='rtl' href='#'>بليش</a></li>
+					<li><a dir='rtl' href='#'>فيري تيل</a></li>
+					<li><a dir='rtl' href='#'>الكيميائي الحديدي</a></li>
+					<li><a dir='rtl' href='#'>غيلان طوكيو</a></li>
+					<li><a dir='rtl' href='#'>الطفيليات</a></li>
+					<li><a dir='rtl' href='#'>الاخر</a></li>
+					<li><a dir='rtl' href='#'>قسم السفاحين</a></li>
+					<li><a dir='rtl' href='#'>أرسلان سينكي</a></li>
+					<li><a dir='rtl' href='#'>باكومان</a></li>
+					<li><a dir='rtl' href='#'>كبير الخدم الأسود</a></li>
+					<li><a dir='rtl' href='#'>أنا وحدي في هذه المدينة</a></li>
+					<li><a dir='rtl' href='#'>بطل الأكاديمية</a></li>
+					<li><a dir='rtl' href='#'>الكيميائي الحديدي</a></li>
+					<li><a dir='rtl' href='#'>شارلوت</a></li>
+					<li><a dir='rtl' href='#'>مفكرة الموت</a></li>
+					<li><a dir='rtl' href='#'>دورارارا</a></li>
+					<li><a dir='rtl' href='#'>المصير</a></li>
+					<li><a dir='rtl' href='#'>كرة السلة</a></li>
+					<li><a dir='rtl' href='#'>الوحش</a></li>
+					<li><a dir='rtl' href='#'>ون بنش مان</a></li>
+					<li><a dir='rtl' href='#'>اواري نو سيراف</a></li>
+					<li><a dir='rtl' href='#'>الاميرة الرئيسية</a></li>
+					<li><a dir='rtl' href='#'>ري زيرو</a></li>
+					<li><a dir='rtl' href='#'>هجوم العمالقة</a></li>
+					<li><a dir='rtl' href='#'>بوابة ستينز</a></li>
+        </ul>
+
+        <div style='position: sticky;top: 0;z-index: 9'>
+            <header id="menu-desktop">
+                <a href="../home/home"><div dir="rtl" class="menuRight">الرئيسية</div></a>
+                <a href='#'><div dir="rtl" class="menuRight">قائمة الأنمي</div></a>
+                <a><div dir="rtl" class="menuRight">قائمة أفلام الأنمي</div></a>
+                <div id='brightness-desktop-container' onclick='changeTheme()'>
+                    <div id='brightness-desktop-flex'>
+						<i id='brightness-desktop' class="material-icons brightness">brightness_2</i>
+					</div>
+                </div>
+                <form>
+                    <input dir='rtl' class='menuLeft' id='searchInput-desktop' type='text' onkeyup='searchDesktop()' value="إبحث عن أنمي أو فلم . . ." onfocus="if(this.value=='إبحث عن أنمي أو فلم . . .') this.value='';" onblur="if(this.value=='') this.value='إبحث عن أنمي أو فلم . . .';">
+                    <i onclick='clearSearch(); searchDesktop()' id='clear-desktop' class="material-icons">clear</i>
+                </form>
+            </header>
+
+            <ul id="searchUL-desktop">
+                <li><a dir='rtl' href='#'>ناروتو شيبودن</a><a dir='rtl' href='#'>naruto shippuden</a></li>
+                <li><a dir='rtl' href='#'>القناص</a><a dir='rtl' href='#'>hunter x hunter 2011</a></li>
+                <li><a dir='rtl' href='#'>كرات التنين</a><a dir='rtl' href='#'>dragon ball z</a></li>
+                <li><a dir='rtl' href='#'>ون بيس</a><a dir='rtl' href='#'>one piece</a></li>
+                <li><a dir='rtl' href='#'>المحقق كونان</a><a dir='rtl' href='#'>detective conan</a></li>
+                <li><a dir='rtl' href='#'>بليش</a><a dir='rtl' href='#'>bleach</a></li>
+                <li><a dir='rtl' href='#'>فيري تيل</a><a dir='rtl' href='#'>fairy tail</a></li>
+                <li><a dir='rtl' href='#'>الكيميائي الحديدي</a><a dir='rtl' href='#'>fullmetal alchemist</a></li>
+                <li><a dir='rtl' href='#'>غيلان طوكيو</a><a dir='rtl' href='#'>tokyo ghoul</a></li>
+                <li><a dir='rtl' href='#'>الطفيليات</a><a dir='rtl' href='#'>kiseijuu sei no kakuritsu</a></li>
+                <li><a dir='rtl' href='#'>الاخر</a><a dir='rtl' href='#'>another</a></li>
+                <li><a dir='rtl' href='#'>قسم السفاحين</a><a dir='rtl' href='#'>ansatsu kyôshitsu</a></li>
+                <li><a dir='rtl' href='#'>ارسلان سينكي</a><a dir='rtl' href='#'>arslan senki</a></li>
+                <li><a dir='rtl' href='#'>باكومان</a><a dir='rtl' href='#'>bakuman</a></li>
+                <li><a dir='rtl' href='#'>كبير الخدم الأسود</a><a dir='rtl' href='#'>black butler</a></li>
+                <li><a dir='rtl' href='#'>انا وحدي في هذه المدينة</a><a dir='rtl' href='#'>boku dake ga inai machi</a></li>
+                <li><a dir='rtl' href='#'>بطل الأكاديمية</a><a dir='rtl' href='#'>boku no hero no academia</a></li>
+                <li><a dir='rtl' href='#'>شارلوت</a><a dir='rtl' href='#'>charlotte</a></li>
+                <li><a dir='rtl' href='#'>مفكرة الموت</a><a dir='rtl' href='#'>death note</a></li>
+                <li><a dir='rtl' href='#'>دورارارا</a><a dir='rtl' href='#'>durarara</a></li>
+                <li><a dir='rtl' href='#'>المصير</a><a dir='rtl' href='#'>fate</a></li>
+								<li><a dir='rtl' href='#'>جينتاما</a><a dir='rtl' href='#'>gintama</a></li>
+                <li><a dir='rtl' href='#'>كرة السلة</a><a dir='rtl' href='#'>kuroko no basuke</a></li>
+                <li><a dir='rtl' href='#'>الوحش</a><a dir='rtl' href='#'>monster</a></li>
+                <li><a dir='rtl' href='#'>ون بنش مان</a><a dir='rtl' href='#'>one punch man</a></li>
+                <li><a dir='rtl' href='#'>اواري نو سيراف</a><a dir='rtl' href='#'>owari no seraph</a></li>
+                <li><a dir='rtl' href='#'>الاميرة الرئيسية</a><a dir='rtl' href='#'>princess principal</a></li>
+                <li><a dir='rtl' href='#'>ري زيرو</a><a dir='rtl' href='#'>re zero</a></li>
+                <li><a dir='rtl' href='#'>هجوم العمالقة</a><a dir='rtl' href='#'>shingeki no kyojin</a></li>
+                <li><a dir='rtl' href='#'>بوابة ستينز</a><a dir='rtl' href='#'>steins gate</a></li>
+            </ul>
+        </div>
+
+		<div id="div-title">
+            <h1 id="title" dir="rtl">قائمة الأنميات :</h1>
+        </div>
+
+        <div id="flex-container">
+            <a>
+                <div class="flex-items">
+                    <img class="anime-img" src="NARUTO.png">
+                    <div class="anime-title">ناروتو شيبودن</div>
+                </div>
+            </a>
+            <a href="hunter/main">
+                <div class="flex-items">
+                    <img class="anime-img" src="HUNTER%20X%20HUNTER%202011.png">
+                    <div class="anime-title">القناص</div>
+                </div>
+            </a>
+            <a>
+                <div class="flex-items">
+                    <img class="anime-img" src="DRAGON%20BALL%20Z.png">
+                    <div class="anime-title">كرات التنين</div>
+                </div>
+            </a>
+            <a>
+                <div class="flex-items">
+                    <img class="anime-img" src="ONE%20PIECE.png">
+                    <div class="anime-title">ون بيس</div>
+                </div>
+            </a>
+            <a>
+                <div class="flex-items">
+                    <img class="anime-img" src="DETECTIVE%20CONAN.png">
+                    <div class="anime-title">المحقق كونان</div>
+                </div>
+            </a>
+            <a>
+                <div class="flex-items">
+                    <img class="anime-img" src="BLEACH.png">
+                    <div class="anime-title">بليش</div>
+                </div>
+            </a>
+            <a>
+                <div class="flex-items">
+                    <img class="anime-img" src="FAIRY%20TAIL.png">
+                    <div class="anime-title">فيري تيل</div>
+                </div>
+            </a>
+            <a>
+                <div class="flex-items">
+                    <img class="anime-img" src="FULLMETAL%20ALCHEMIST.png">
+                    <div class="anime-title">الكيميائي الحديدي</div>
+                </div>
+            </a>
+            <a>
+                <div class="flex-items">
+                    <img class="anime-img" src="TOKYO%20GHOUL.png">
+                    <div class="anime-title">غيلان طوكيو</div>
+                </div>
+            </a>
+            <a>
+                <div class="flex-items">
+                    <img class="anime-img" src="KISEIJUU%20SEI%20NO%20KAKARITSU.png">
+                    <div class="anime-title">الطفيليات</div>
+                </div>
+            </a>
+            <a>
+                <div class="flex-items">
+                    <img class="anime-img" src="another.jpg">
+                    <div class="anime-title">الاخر</div>
+                </div>
+            </a>
+            <a href="hunter/main">
+                <div class="flex-items">
+                    <img class="anime-img" src="ansatsu%20kyôshitsu.jpg">
+                    <div class="anime-title">قسم السفاحين</div>
+                </div>
+            </a>
+            <a>
+                <div class="flex-items">
+                    <img class="anime-img" src="arslan%20senki.jpg">
+                    <div class="anime-title">أرسلان سينكي</div>
+                </div>
+            </a>
+            <a>
+                <div class="flex-items">
+                    <img class="anime-img" src="bakuman.jpeg">
+                    <div class="anime-title">باكومان</div>
+                </div>
+            </a>
+            <a>
+                <div class="flex-items">
+                    <img class="anime-img" src="black%20butler.jpg">
+                    <div class="anime-title">كبير الخدم الأسود</div>
+                </div>
+            </a>
+            <a>
+                <div class="flex-items">
+                    <img class="anime-img" src="boku%20dake%20ga%20inai%20machi.jpg">
+                    <div class="anime-title">أنا وحدي في هذه المدينة</div>
+                </div>
+            </a>
+            <a>
+                <div class="flex-items">
+                    <img class="anime-img" src="boku%20no%20hero%20academia.jpg">
+                    <div class="anime-title">بطل الأكاديمية</div>
+                </div>
+            </a>
+            <a>
+                <div class="flex-items">
+                    <img class="anime-img" src="charlotte.jpg">
+                    <div class="anime-title">شارلوت</div>
+                </div>
+            </a>
+            <a>
+                <div class="flex-items">
+                    <img class="anime-img" src="death%20note.jpg">
+                    <div class="anime-title">مفكرة الموت</div>
+                </div>
+            </a>
+            <a>
+                <div class="flex-items">
+                    <img class="anime-img" src="durarara.jpg">
+                    <div class="anime-title">دورارارا</div>
+                </div>
+            </a><a>
+                <div class="flex-items">
+                    <img class="anime-img" src="fate.jpg">
+                    <div class="anime-title">المصير</div>
+                </div>
+            </a>
+            <a href="hunter/main">
+                <div class="flex-items">
+                    <img class="anime-img" src="gintama.jpg">
+                    <div class="anime-title">جينتاما</div>
+                </div>
+            </a>
+            <a>
+                <div class="flex-items">
+                    <img class="anime-img" src="kuroko%20no%20basuke.png">
+                    <div class="anime-title">كرة السلة</div>
+                </div>
+            </a>
+            <a>
+                <div class="flex-items">
+                    <img class="anime-img" src="monster.jpg">
+                    <div class="anime-title">الوحش</div>
+                </div>
+            </a>
+            <a>
+                <div class="flex-items">
+                    <img class="anime-img" src="one%20punch%20man.jpg">
+                    <div class="anime-title">ون بنش مان</div>
+                </div>
+            </a>
+            <a>
+                <div class="flex-items">
+                    <img class="anime-img" src="owari%20no%20seraph.jpg">
+                    <div class="anime-title">اواري نو سيراف</div>
+                </div>
+            </a>
+            <a>
+                <div class="flex-items">
+                    <img class="anime-img" src="princess%20principal.jpg">
+                    <div class="anime-title">الاميرة الرئيسية</div>
+                </div>
+            </a>
+            <a>
+                <div class="flex-items">
+                    <img class="anime-img" src="re%20zero.jpg">
+                    <div class="anime-title">ري زيرو</div>
+                </div>
+            </a>
+            <a>
+                <div class="flex-items">
+                    <img class="anime-img" src="shingeki%20no%20kyojin.jpg">
+                    <div class="anime-title">هجوم العمالقة</div>
+                </div>
+            </a>
+            <a>
+                <div class="flex-items">
+                    <img class="anime-img" src="steins%20gate.jpg">
+                    <div class="anime-title">بوابة ستينز</div>
+                </div>
+            </a>
+						<a>
+                <div class="flex-items">
+                    <img class="anime-img" src="NARUTO.png">
+                    <div class="anime-title">ناروتو شيبودن</div>
+                </div>
+            </a>
+            <a href="hunter/main">
+                <div class="flex-items">
+                    <img class="anime-img" src="HUNTER%20X%20HUNTER%202011.png">
+                    <div class="anime-title">القناص</div>
+                </div>
+            </a>
+            <a>
+                <div class="flex-items">
+                    <img class="anime-img" src="DRAGON%20BALL%20Z.png">
+                    <div class="anime-title">كرات التنين</div>
+                </div>
+            </a>
+            <a>
+                <div class="flex-items">
+                    <img class="anime-img" src="ONE%20PIECE.png">
+                    <div class="anime-title">ون بيس</div>
+                </div>
+            </a>
+            <a>
+                <div class="flex-items">
+                    <img class="anime-img" src="DETECTIVE%20CONAN.png">
+                    <div class="anime-title">المحقق كونان</div>
+                </div>
+            </a>
+            <a>
+                <div class="flex-items">
+                    <img class="anime-img" src="BLEACH.png">
+                    <div class="anime-title">بليش</div>
+                </div>
+            </a>
+            <a>
+                <div class="flex-items">
+                    <img class="anime-img" src="FAIRY%20TAIL.png">
+                    <div class="anime-title">فيري تيل</div>
+                </div>
+            </a>
+            <a>
+                <div class="flex-items">
+                    <img class="anime-img" src="FULLMETAL%20ALCHEMIST.png">
+                    <div class="anime-title">الكيميائي الحديدي</div>
+                </div>
+            </a>
+            <a>
+                <div class="flex-items">
+                    <img class="anime-img" src="TOKYO%20GHOUL.png">
+                    <div class="anime-title">غيلان طوكيو</div>
+                </div>
+            </a>
+            <a>
+                <div class="flex-items">
+                    <img class="anime-img" src="KISEIJUU%20SEI%20NO%20KAKARITSU.png">
+                    <div class="anime-title">الطفيليات</div>
+                </div>
+            </a>
+            <a>
+                <div class="flex-items">
+                    <img class="anime-img" src="another.jpg">
+                    <div class="anime-title">الاخر</div>
+                </div>
+            </a>
+            <a href="hunter/main">
+                <div class="flex-items">
+                    <img class="anime-img" src="ansatsu%20kyôshitsu.jpg">
+                    <div class="anime-title">قسم السفاحين</div>
+                </div>
+            </a>
+            <a>
+                <div class="flex-items">
+                    <img class="anime-img" src="arslan%20senki.jpg">
+                    <div class="anime-title">أرسلان سينكي</div>
+                </div>
+            </a>
+            <a>
+                <div class="flex-items">
+                    <img class="anime-img" src="bakuman.jpeg">
+                    <div class="anime-title">باكومان</div>
+                </div>
+            </a>
+            <a>
+                <div class="flex-items">
+                    <img class="anime-img" src="black%20butler.jpg">
+                    <div class="anime-title">كبير الخدم الأسود</div>
+                </div>
+            </a>
+            <a>
+                <div class="flex-items">
+                    <img class="anime-img" src="boku%20dake%20ga%20inai%20machi.jpg">
+                    <div class="anime-title">أنا وحدي في هذه المدينة</div>
+                </div>
+            </a>
+            <a>
+                <div class="flex-items">
+                    <img class="anime-img" src="boku%20no%20hero%20academia.jpg">
+                    <div class="anime-title">بطل الأكاديمية</div>
+                </div>
+            </a>
+            <a>
+                <div class="flex-items">
+                    <img class="anime-img" src="charlotte.jpg">
+                    <div class="anime-title">شارلوت</div>
+                </div>
+            </a>
+            <a>
+                <div class="flex-items">
+                    <img class="anime-img" src="death%20note.jpg">
+                    <div class="anime-title">مفكرة الموت</div>
+                </div>
+            </a>
+            <a>
+                <div class="flex-items">
+                    <img class="anime-img" src="durarara.jpg">
+                    <div class="anime-title">دورارارا</div>
+                </div>
+            </a><a>
+                <div class="flex-items">
+                    <img class="anime-img" src="fate.jpg">
+                    <div class="anime-title">المصير</div>
+                </div>
+            </a>
+            <a href="hunter/main">
+                <div class="flex-items">
+                    <img class="anime-img" src="gintama.jpg">
+                    <div class="anime-title">جينتاما</div>
+                </div>
+            </a>
+            <a>
+                <div class="flex-items">
+                    <img class="anime-img" src="kuroko%20no%20basuke.png">
+                    <div class="anime-title">كرة السلة</div>
+                </div>
+            </a>
+            <a>
+                <div class="flex-items">
+                    <img class="anime-img" src="monster.jpg">
+                    <div class="anime-title">الوحش</div>
+                </div>
+            </a>
+            <a>
+                <div class="flex-items">
+                    <img class="anime-img" src="one%20punch%20man.jpg">
+                    <div class="anime-title">ون بنش مان</div>
+                </div>
+            </a>
+            <a>
+                <div class="flex-items">
+                    <img class="anime-img" src="owari%20no%20seraph.jpg">
+                    <div class="anime-title">اواري نو سيراف</div>
+                </div>
+            </a>
+            <a>
+                <div class="flex-items">
+                    <img class="anime-img" src="princess%20principal.jpg">
+                    <div class="anime-title">الاميرة الرئيسية</div>
+                </div>
+            </a>
+            <a>
+                <div class="flex-items">
+                    <img class="anime-img" src="re%20zero.jpg">
+                    <div class="anime-title">ري زيرو</div>
+                </div>
+            </a>
+            <a>
+                <div class="flex-items">
+                    <img class="anime-img" src="shingeki%20no%20kyojin.jpg">
+                    <div class="anime-title">هجوم العمالقة</div>
+                </div>
+            </a>
+            <a>
+                <div class="flex-items">
+                    <img class="anime-img" src="steins%20gate.jpg">
+                    <div class="anime-title">بوابة ستينز</div>
+                </div>
+            </a>
+        </div>
+
+        <div id="pagination">
+            <div dir="rtl" class="pagination-items">&laquo;</div>
+            <div dir="rtl" class="pagination-items">1</div>
+            <div dir="rtl" class="pagination-items">2</div>
+            <div dir="rtl" class="pagination-items">3</div>
+            <div dir="rtl" class="pagination-items">4</div>
+            <div dir="rtl" class="pagination-items">5</div>
+            <div dir="rtl" class="pagination-items">6</div>
+            <div dir="rtl" class="pagination-items">7</div>
+            <div dir="rtl" class="pagination-items">8</div>
+            <div dir="rtl" class="pagination-items">&raquo;</div>
+        </div>
+
+        <footer id="footer">
+            COPYRIGHT &copy; 2019 &nbsp;&nbsp;| &nbsp; NARA.tv Programmed by <a id="FOUAD">&nbsp;FOUAD</a>
+        </footer>
+	</body>
+</html>

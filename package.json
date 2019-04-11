@@ -1,0 +1,18 @@
+{
+  "name": "nara-tv",
+  "version": "1.0.0",
+  "description": "cartoon website",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "author": "Johan Liebert",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.16.4"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/johan-liebert-m/nara-tv"
+  }
+}
